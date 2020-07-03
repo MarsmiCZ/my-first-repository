@@ -33,15 +33,25 @@ printNumbersTill(15);
 
 //Exercise 2
 let getGreetingTo = name => {
-    console.log('Hello, ${name}!');
+    return `Hello, ${name}!`;
 }
-getGreetingTo("Mark");
+getGreetingTo("Mark"); // Should not print to the console
+console.log(getGreetingTo('Mark')); // Should print 'Hello Mark!'
 
 //For loops and arrays
 
 //Exercise 1
+let printValues = (array) => {
+    for (let i = 0; i < array.length; i++) {
+      console.log(array[i]);
+    }
+  };
 
+  printValues([0, 3, 6, 7, 9]);
 
 //Exercise 2
-
-
+let  printValues2 = [0, 3, 6, 7, 9];
+printValues2.forEach((array) => {
+      console.log(array);
+  });
+ 
